@@ -1,0 +1,26 @@
+<model-viewer src="newcordatesys.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.76" exposure="1.34" shadow-softness="0.98" environment-image="legacy" camera-orbit="234.6deg 75deg 2.191m" field-of-view="19.33deg">
+    <button class="Hotspot" slot="hotspot-7" data-position="0.12430200863581822m 0.17746407229036215m -0.07047788250816345m" data-normal="-0.032750542669774126m -0.8463103963200742m 0.5316823441072636m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Tool setter</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="0.231112214361953m 0.24147358688042864m -0.2560422890132722m" data-normal="-5.742122721752452e-8m 0.7071064656553393m 0.7071070967176128m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">XYZ sensor</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="0.19365917471407676m 0.34405027580997644m -0.29217800076192113m" data-normal="-0.25762756049682217m -5.916539923101288e-17m 0.9662442962690422m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Spindle</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="0.2024461830712888m 0.2569426779228554m -0.3219608570182469m" data-normal="-0.8565829949021241m 0.22080188792411826m 0.46638192410689877m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Tool Endmill</div>
+    </button><button class="Hotspot" slot="hotspot-11" data-position="0.03736948706686008m 0.10587742104049075m -0.005156329251702618m" data-normal="-0.4647233616370057m 0.8854559261469769m 4.718447854656914e-16m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Y axis Home sensor</div>
+    </button><button class="Hotspot" slot="hotspot-12" data-position="-0.014589217163754387m 0.4246373124977453m -0.41285648223191035m" data-normal="-0.8548697129639727m 0.22274486404023375m 0.4685963074978212m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">X axis Home sensor</div>
+    </button><button class="Hotspot" slot="hotspot-13" data-position="0.12557683339455408m 0.506843956471539m -0.36398608549613587m" data-normal="-0.272121395332194m 0.8770065701689506m 0.3959916944620852m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Z axis Home sensor</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
