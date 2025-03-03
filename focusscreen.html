@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จำลองหน้าจอ CNC</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 1200px;
+            min-height: 700px;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 1200px; /* คงที่ */
+            height: 700px; /* คงที่ */
+            background: url('screencnc3.png') no-repeat center;
+            background-size: cover;
+        }
+        iframe {
+            position: absolute;
+            top: 112px; /* ค่าคงที่ */
+            left: 190px; /* ค่าคงที่ */
+            width: 660px; /* ค่าคงที่ */
+            height: 455px; /* ค่าคงที่ */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://piyawat043.github.io/HICNCX/"></iframe>
+    </div>
+</body>
+</html>
