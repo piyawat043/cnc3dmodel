@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sketchfab Models Showcase + External Page</title>
+  <meta name="description" content="Embed multiple Sketchfab models and an external page" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2}
+    html,body{height:100%;margin:0;font-family:Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #07182a 100%)}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;gap:12px;align-items:center}
+    header h1{font-size:20px;margin:0}
+    header p{margin:0;color:var(--muted);font-size:13px}
+
+    .card{background:rgba(255,255,255,0.02);border-radius:12px;padding:16px;margin-top:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .iframe-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin-bottom:10px}
+    .iframe-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+    .sketchfab-embed-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin-bottom:10px}
+    .sketchfab-embed-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+    .muted{color:var(--muted);font-size:13px}
+    footer{margin-top:6px;color:var(--muted);font-size:13px}
+
+    @media (max-width:520px){.container{padding:12px;margin:18px auto}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Sketchfab Models Showcase</h1>
+        <p>แสดงเพจภายนอกและโมเดล 3D เรียงตามหน้าเว็บ</p>
+      </div>
+    </header>
+
+    <!-- External page iframe -->
+    <div class="card">
+      <div class="iframe-wrapper">
+        <iframe src="https://piyawat043.github.io/cnc3dmodel/" title="External CNC3DModel Page"></iframe>
+      </div>
+      <footer>
+        <div class="muted">เพจภายนอกจาก <a href="https://piyawat043.github.io/cnc3dmodel/" target="_blank">piyawat043.github.io/cnc3dmodel/</a></div>
+      </footer>
+    </div>
+
+    <!-- Model 1 -->
+    <div class="card">
+      <div class="sketchfab-embed-wrapper">
+        <iframe title="Touch Probe - 6mm" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/285854a6c7a343898dec24024a2ce320/embed?autostart=1&ui_theme=dark"></iframe>
+      </div>
+      <footer>
+        <div>Model ID: <strong>285854a6c7a343898dec24024a2ce320</strong></div>
+        <div class="muted">Touch Probe - 6mm</div>
+      </footer>
+    </div>
+
+    <!-- Model 2 -->
+    <div class="card">
+      <div class="sketchfab-embed-wrapper">
+        <iframe title="9989-5666655" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/07be7fe71b20412e99f48ad58a7ba031/embed?autostart=1"></iframe>
+      </div>
+      <footer>
+        <div>Model ID: <strong>07be7fe71b20412e99f48ad58a7ba031</strong></div>
+        <div class="muted">9989-5666655</div>
+      </footer>
+    </div>
+
+    <!-- Model 3 -->
+    <div class="card">
+      <div class="sketchfab-embed-wrapper">
+        <iframe title="newzone" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/ec533168ac9f4bb9ac5fe048d6ffca48/embed?autostart=1"></iframe>
+      </div>
+      <footer>
+        <div>Model ID: <strong>ec533168ac9f4bb9ac5fe048d6ffca48</strong></div>
+        <div class="muted">newzone</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
