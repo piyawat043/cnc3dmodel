@@ -10,22 +10,24 @@
       font-family: Arial, sans-serif;
       background: #111;
       color: #fff;
-      height: 100vh;
       overflow-y: scroll;
       scroll-snap-type: y mandatory; /* เปิด snap แนวตั้ง */
-      padding-right: 12px; /* เผื่อขอบขวาให้เลื่อนง่าย */
+      padding-right: 20px; /* เพิ่มขอบขวาให้เลื่อนง่าย */
       box-sizing: border-box;
     }
 
     section {
-      height: 100vh; /* ให้เต็มจอทุกบล็อก */
+      scroll-snap-align: start;
+      padding: 16px 0;
+      box-sizing: border-box;
+    }
+
+    /* section แรก (เว็บภายนอก) ให้กินเต็มจอ */
+    section.external {
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      scroll-snap-align: start; /* snap ที่จุดเริ่มต้น */
-      padding: 10px;
-      box-sizing: border-box;
     }
 
     iframe.external-page {
@@ -35,9 +37,11 @@
       border-radius: 8px;
     }
 
+    /* โมเดล */
     .sketchfab-embed-wrapper {
       width: 100%;
       max-width: 600px;
+      margin: 0 auto;
       text-align: center;
     }
 
@@ -49,7 +53,7 @@
     }
 
     .description {
-      margin-top: 12px;
+      margin-top: 8px;
       font-size: 14px;
       line-height: 1.4;
       padding: 0 10px;
@@ -66,7 +70,7 @@
 <body>
 
   <!-- หน้าเว็บภายนอก -->
-  <section>
+  <section class="external">
     <iframe class="external-page" src="https://piyawat043.github.io/cnc3dmodel/"></iframe>
   </section>
 
