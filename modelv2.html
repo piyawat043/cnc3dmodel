@@ -1,117 +1,37 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iMak 3D Models Showcase</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory; /* เปิด snap แนวตั้ง */
-      padding-right: 20px; /* เพิ่มขอบขวาให้เลื่อนง่าย */
-      box-sizing: border-box;
+<title>Phoenix Ecosystem Fullscreen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* 1. ตั้งค่าให้หน้าเว็บไม่มีระยะขอบและสูงเต็มจอ */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* ซ่อน scrollbar ที่ไม่จำเป็น */
     }
 
-    section {
-      scroll-snap-align: start;
-      padding: 16px 0;
-      box-sizing: border-box;
-    }
-
-    /* section แรก (เว็บภายนอก) ให้กินเต็มจอ */
-    section.external {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    iframe.external-page {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 8px;
-    }
-
-    /* โมเดล */
+    /* 2. ทำให้ div ที่ครอบ iframe ขยายเต็มหน้าจอ */
     .sketchfab-embed-wrapper {
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
+        width: 100%;
+        height: 100%;
     }
 
+    /* 3. ทำให้ iframe ขยายเต็มพื้นที่ของ div ที่ครอบมันอยู่ */
     .sketchfab-embed-wrapper iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border: none;
-      border-radius: 8px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0; /* ลบเส้นขอบของ iframe ออก */
     }
-
-    .description {
-      margin-top: 8px;
-      font-size: 14px;
-      line-height: 1.4;
-      padding: 0 10px;
-      color: #ddd;
-    }
-
-    @media (max-width: 480px) {
-      .description {
-        font-size: 13px;
-      }
-    }
-  </style>
+</style>
 </head>
 <body>
 
-  <!-- หน้าเว็บภายนอก -->
-  <section class="external">
-<div class="sketchfab-embed-wrapper"> <iframe title="Phoenix Ecosystem" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6f4a3f4c61d244bf91abf4d64fea5f6f/embed?autostart=1&annotations_visible=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/phoenix-ecosystem-6f4a3f4c61d244bf91abf4d64fea5f6f?utm_medium=embed&utm_campaign=share-popup&utm_content=6f4a3f4c61d244bf91abf4d64fea5f6f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Phoenix Ecosystem </a> by <a href="https://sketchfab.com/higun043?utm_medium=embed&utm_campaign=share-popup&utm_content=6f4a3f4c61d244bf91abf4d64fea5f6f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> higun043 </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=6f4a3f4c61d244bf91abf4d64fea5f6f" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
- </section>
-    <!-- โมเดล 1 -->
-  <section>
-    <div class="sketchfab-embed-wrapper">
-      <iframe title="Touch Probe - 6mm" 
-        src="https://sketchfab.com/models/285854a6c7a343898dec24024a2ce320/embed?autostart=1&ui_theme=dark"
-        allow="autoplay; fullscreen; xr-spatial-tracking">
-      </iframe>
-      <div class="description">
-        โมเดลนี้เป็นหัววัด (Touch Probe) ขนาด 6mm ใช้กับระบบ iMak (CNC)
-      </div>
+<div class="sketchfab-embed-wrapper"> 
+    <iframe title="Phoenix Ecosystem" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6f4a3f4c61d244bf91abf4d64fea5f6f/embed?autostart=1&annotations_visible=1"> </iframe> 
     </div>
-  </section>
-
-  <!-- โมเดล 2 -->
-  <section>
-    <div class="sketchfab-embed-wrapper">
-      <iframe title="9989-5666655" 
-        src="https://sketchfab.com/models/07be7fe71b20412e99f48ad58a7ba031/embed?autostart=1&ui_theme=dark"
-        allow="autoplay; fullscreen; xr-spatial-tracking">
-      </iframe>
-      <div class="description">
-        โมเดลนี้เป็นชิ้นส่วนตัวอย่าง 9989-5666655 แสดงการออกแบบเชิงวิศวกรรม
-      </div>
-    </div>
-  </section>
-
-  <!-- โมเดล 3 -->
-  <section>
-    <div class="sketchfab-embed-wrapper">
-      <iframe title="newzone" 
-        src="https://sketchfab.com/models/ec533168ac9f4bb9ac5fe048d6ffca48/embed?autostart=1&ui_theme=dark"
-        allow="autoplay; fullscreen; xr-spatial-tracking">
-      </iframe>
-      <div class="description">
-        โมเดลนี้คือ newzone สำหรับการทดลองและสาธิตการใช้งาน iMak (CNC)
-      </div>
-    </div>
-  </section>
 
 </body>
 </html>
-
