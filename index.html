@@ -1,116 +1,37 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>3DCNCMODEL</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <style>
-      .HotspotAnnotation {
-        font-size: 10px; /* ลดขนาดตัวหนังสือ */
-      }
-    </style>
-  </head>
-  <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="cncmodelall.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.63" environment-image="legacy" exposure="0.3" shadow-softness="0.28" camera-orbit="-2.985deg 69.39deg 2.405m" field-of-view="24.39deg">
-      <button class="Hotspot" slot="hotspot-1" 
-              data-position="-0.7067842588954231m 0.6083206918695283m 0.31058823680690567m" 
-              data-normal="0m -0.017452406437283848m 0.9998476951563913m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='https://piyawat043.github.io/HICNCX/'">
-          <div class="HotspotAnnotation">Computer</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-2" 
-              data-position="-0.5018955802964138m 0.25901526032962746m 0.4059028112417887m" 
-              data-normal="0.284420253027943m 0.5394352056036799m 0.7925369257156643m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='controller.html'">
-          <div class="HotspotAnnotation">Controller</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-3" 
-              data-position="-0.24562082389830908m 0.160132814690223m 0.388907585226856m" 
-              data-normal="-0.1476035385128388m 1.3079448314318561e-15m 0.9890466093256116m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='tool-setter.html'">
-          <div class="HotspotAnnotation">Tool setter</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-4" 
-              data-position="-0.13232549231757487m 0.24266325744651668m 0.20073138782919747m" 
-              data-normal="-3.6783953213851105e-9m 0.707107061304244m 0.7071065010687401m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='xyz-sensor.html'">
-          <div class="HotspotAnnotation">XYZ sensor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-5" 
-              data-position="-0.16297995559565054m 0.25622234700968577m 0.1348744421162739m" 
-              data-normal="-0.12087713951930223m 0.26981971453797093m 0.9552936924256745m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='tool.html'">
-          <div class="HotspotAnnotation">Tool</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-6" 
-              data-position="-0.1740092631762813m 0.4685494512105444m 0.16596759846041426m" 
-              data-normal="-0.257627560496823m -5.721263387455086e-16m 0.9662442962690418m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='spindle.html'">
-          <div class="HotspotAnnotation">Spindle</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-7" 
-              data-position="-0.2359009921995392m 0.5228948097149673m 0.0934079933308483m" 
-              data-normal="0.6927242648559977m 5.157095927818785e-16m 0.7212025324967444m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='z-sensor.html'">
-          <div class="HotspotAnnotation">Z sensor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-8" 
-              data-position="-0.3969841277941115m 0.4269394098364998m 0.04323109725159447m" 
-              data-normal="3.784070568215888e-15m 0.8229839487460714m 0.5680646266986914m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='x-sensor.html'">
-          <div class="HotspotAnnotation">X sensor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-9" 
-              data-position="-0.3335264786095579m 0.10303106686377456m 0.4564989883808521m" 
-              data-normal="-0.935016148286893m 0.3546051359508811m -1.0668932318863573e-16m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='y-sensor.html'">
-          <div class="HotspotAnnotation">Y sensor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-10" 
-              data-position="0.3375651592934559m 0.4012128302205035m -0.006587084899974796m" 
-              data-normal="7.105427357601002e-15m -2.220446049250313e-16m 1m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='x-motor.html'">
-          <div class="HotspotAnnotation">X Motor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-11" 
-              data-position="-0.15380937300536607m 0.5183733785685374m 0.0608143904808052m" 
-              data-normal="1m -1.9721522630525295e-31m 1e-15m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='z-motor.html'">
-          <div class="HotspotAnnotation">Z motor</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-12" 
-              data-position="-0.023739473232141997m 0.11597668082606136m -0.27872274675072983m" 
-              data-normal="1m -1.0367997407555525e-31m 4.0000000000000014e-16m" 
-              data-visibility-attribute="visible"
-              onclick="window.location.href='y-motor.html'">
-          <div class="HotspotAnnotation">Y motor</div>
-      </button>
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer>  
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phoenix Ecosystem Fullscreen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* 1. ตั้งค่าให้หน้าเว็บไม่มีระยะขอบและสูงเต็มจอ */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* ซ่อน scrollbar ที่ไม่จำเป็น */
+    }
+
+    /* 2. ทำให้ div ที่ครอบ iframe ขยายเต็มหน้าจอ */
+    .sketchfab-embed-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 3. ทำให้ iframe ขยายเต็มพื้นที่ของ div ที่ครอบมันอยู่ */
+    .sketchfab-embed-wrapper iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0; /* ลบเส้นขอบของ iframe ออก */
+    }
+</style>
+</head>
+<body>
+
+<div class="sketchfab-embed-wrapper"> 
+    <iframe title="Phoenix Ecosystem" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6f4a3f4c61d244bf91abf4d64fea5f6f/embed?autostart=1&annotations_visible=1"> </iframe> 
+    </div>
+
+</body>
 </html>
